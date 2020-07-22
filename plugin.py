@@ -231,7 +231,7 @@ class BasePlugin:
 
 
              # fool proof checking....
-             if len(Heatingmodeswitchh) == 0:
+             if len(Heatingmodeswitch) == 0:
                 Domoticz.Error("none of the devices in the 'Heating mode request switch' parameter is a switch... no action !")
                 self.Heatmodezone = False
                 self.Air = False
