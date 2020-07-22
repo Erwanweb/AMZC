@@ -116,9 +116,9 @@ class BasePlugin:
 
         # build lists of sensors and switches
         self.Airrequester = parseCSV(Parameters["Mode1"])
-        Domoticz.Debug("Air requester = {}".format(self.Heatingrequester))
+        Domoticz.Debug("Air requester = {}".format(self.Airrequester))
         self.Zoneheatmode = parseCSV(Parameters["Mode2"])
-        Domoticz.Debug("Zone heat mode = {}".format(self.Heaters))
+        Domoticz.Debug("Zone heat mode = {}".format(self.Zoneheatmode))
 
         # splits additional parameters
         params = parseCSV(Parameters["Mode5"])
