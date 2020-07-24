@@ -38,6 +38,7 @@ Version:    0.0.1: alpha
 """
 import Domoticz
 import json
+import urllib
 import urllib.parse as parse
 import urllib.request as request
 from datetime import datetime, timedelta
@@ -475,7 +476,7 @@ def DomoticzAPI(APICall):
 def ESPcommandAPI(APICall):
 
     resultJson = None
-    url = "http://{}/control?cmd=heatpumpir,{}".format(Parameters["Username"], parse.quote(APICall, safe="&="))
+    url = "http://{}/control?cmd=heatpumpir,{}".format(Parameters["Username"], parse.quote(APICall, safe=","))
     Domoticz.Debug("Calling ESP Command API: {}".format(url))
     try:
         req = request.Request(url)
