@@ -273,7 +273,7 @@ class BasePlugin:
 
         now = datetime.now()
 
-        if not Devices[1].sValue == "10":  # Auto mode is on or Manual mode is on
+        if not Devices[1].sValue == "0":  # Auto mode is on or Manual mode is on
              self.Airrequested = False
              # Build list of Heating requester device, with their current status
              Airrequesterswitch = {}
