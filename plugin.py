@@ -69,9 +69,9 @@ class BasePlugin:
         self.Zoneheatmode = []
         self.Zoneturbomode = []
         self.Airrequester = []
-        self.WACmode = []
-        self.WACfanspeed = []
-        self.WACsetpoint = []
+        self.WACmode = 0
+        self.WACfanspeed = 0
+        self.WACsetpoint = 0
         self.Air = False
         self.turbo = False
         self.Heatmodezone = False
